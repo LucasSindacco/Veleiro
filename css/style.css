@@ -1,0 +1,278 @@
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Style navbar */
+
+#navbar .container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+#navbar .container .logo h1 {
+    color: rgb(255, 255, 255, 0.90);
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#navbar .container .menu h1 {
+    color: rgb(255, 255, 255, 0.90);
+    font-weight: 450;
+    font-size: 1.8rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#navbar .container .menu h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.10rem;
+    width: 0%;
+    height: 3px;
+    transition: ease-in-out .3s;
+    background-color: #fff;
+}
+
+#navbar .container .menu h1:hover::after {
+    width: 100%;
+    transition: ease-in-out .3s;
+}
+
+
+/* Navabr responsive */
+
+.navbar-responsive .container {
+    position: absolute;
+    transition: ease-in-out .3s;
+    top: -14rem;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 10vh;
+}
+
+.navbar-responsive .container.active {
+    transition: ease-in-out .3s;
+    top: 0;
+}
+
+.navbar-responsive ul,
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navbar-responsive .itens ul {
+    display: flex;
+}
+
+.navbar-responsive .itens ul li {
+    margin-left: 2rem;
+}
+
+.navbar-responsive .itens ul li a {
+    color: rgb(0, 0, 0, 0.90);
+    font-size: 1.4rem;
+    font-weight: 450;
+    transition: ease-in-out .3s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-responsive .itens ul li a:hover {
+    border-bottom: 2px solid #000;
+}
+
+
+/* Responsive Social */
+
+.navbar-responsive .close a {
+    color: rgb(0, 0, 0, 0.90);
+    font-size: 1.5rem;
+    font-weight: 450;
+    position: relative;
+}
+
+.navbar-responsive .close a::after {
+    content: '';
+    position: absolute;
+    bottom: -.10rem;
+    height: 3px;
+    width: 0%;
+    background-color: #000;
+    transition: ease-in-out .3s;
+    left: 0;
+}
+
+.navbar-responsive .close a:hover::after {
+    transition: ease-in-out .3s;
+    width: 100%;
+}
+
+.navbar-responsive .social ul li a {
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+/* CSS home page */
+
+#home-page .container {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(#cb3535cc, #B62C2C)
+}
+
+#home-page .container.opacity {
+    background-image: radial-gradient(#cb3535cc, #B62C2C);
+    opacity: 0.5;
+}
+
+#home-page .image-home {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-page .image-home img {
+    animation: animation ease-in-out infinite 2s;
+}
+
+#home-page .about {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: relative;
+    top: -5rem;
+}
+
+#home-page .about .street h3 {
+    color: #fff;
+    font-weight: 350;
+    font-size: 1.6rem;
+}
+
+#home-page .about .pizzas h3 {
+    color: #fff;
+    font-weight: 350;
+    font-size: 1.6rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#home-page .about .pizzas h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.10rem;
+    width: 0%;
+    height: 3px;
+    transition: ease-in-out .3s;
+    background-color: #fff;
+}
+
+#home-page .about .pizzas h3:hover::after {
+    transition: ease-in-out .3s;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+
+/* Box Modal */
+
+#sect-modal .container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    text-align: center;
+}
+
+#sect-modal .container .box-modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    border-radius: .20rem;
+    background-color: #fff;
+    opacity: 0;
+}
+
+#sect-modal .container .box-modal .promotion {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #B62C2C;
+    border-bottom-left-radius: 1rem;
+}
+
+#sect-modal .container .box-modal .promotion p {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#sect-modal .container .box-modal.responsiveBox {
+    opacity: 1;
+}
+
+#sect-modal .container .box-modal .title-modal h1 {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0, 0.80);
+    font-weight: bold;
+}
+
+#sect-modal .container .box-modal .title-modal p {
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 400;
+}
+
+#sect-modal .container .box-modal .buttons a {
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: #B62C2C;
+    padding: .70rem 2rem;
+    color: #fff;
+    border-radius: 80rem;
+}
+
+
+/* Effects image */
+
+@keyframes animation {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}

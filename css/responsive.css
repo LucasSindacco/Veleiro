@@ -1,0 +1,46 @@
+@media screen and (max-width: 997px) {
+    #home-page .image-home img {
+        width: 40%;
+    }
+    .navbar-responsive .itens ul {
+        display: block;
+    }
+    .navbar-responsive .itens ul li a {
+        font-size: 1rem;
+    }
+    .navbar-responsive .social ul li {
+        display: table-caption;
+    }
+    .navbar-responsive .social ul li {
+        position: relative;
+        left: -1rem;
+    }
+    .navbar-responsive .social ul li a {
+        position: relative;
+        font-size: .9rem;
+    }
+    .navbar-responsive .close a {
+        font-size: .9rem;
+    }
+}
+
+
+/* 600px */
+
+@media screen and (max-width: 600px) {
+    .navbar-responsive .container {
+        height: 15vh;
+    }
+    #navbar .container .logo h1 {
+        font-size: 1rem;
+    }
+    #navbar .container .menu h1 {
+        font-size: 1rem;
+    }
+    #home-page .about .street h3 {
+        font-size: 1rem;
+    }
+    #home-page .about .pizzas h3 {
+        font-size: 1rem;
+    }
+}
